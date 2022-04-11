@@ -1,0 +1,44 @@
+{
+    "private": true,
+    "scripts": {
+        "relay": "relay-compiler --src ./resources/js/components/graphql --schema ./graphql/relay/schema.graphql",
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@babel/preset-react": "^7.16.0",
+        "axios": "^0.21",
+        "babel-plugin-macros": "^3.1.0",
+        "babel-plugin-relay": "^12.0.0",
+        "graphql": "^15.0.0",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "relay-config": "^12.0.1",
+        "tailwindcss": "^2.2.19"
+    },
+    "dependencies": {
+        "@tailwindcss/forms": "^0.3.4",
+        "babel-plugin-relay": "^12.0.0",
+        "crypto": "^1.0.1",
+        "graphql": "^15.0.0",
+        "react-hook-form": "^7.22.5",
+        "react-relay": "^12.0.0",
+        "react-router-dom": "^6.0.2",
+        "relay-compiler": "^12.0.0",
+        "relay-config": "^12.0.1",
+        "relay-runtime": "^12.0.0"
+    },
+    "babel": {
+        "plugins": [
+            [
+                "relay"
+            ]
+        ]
+    }
+}
